@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    color: white;
+}
+body{
+    background-image: url("../img/imagengif.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+}
+#centro{
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,9 @@
+body{
+    background-image: url("../img/imagengif4.gif");
+    background-repeat: no-repeat;
+    background-size: 150%;
+}
+#centrar{
+    text-align: center;
+    color: white;
+}

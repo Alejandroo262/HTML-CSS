@@ -1,0 +1,13 @@
+body{
+    background-image: url("../img/imagengif3.gif");
+    background-repeat: no-repeat;
+    background-size: 150%;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+#centrar{
+    color: white;
+    text-align: center;
+}
