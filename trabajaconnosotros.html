@@ -25,19 +25,29 @@
     </header><br><br><br><br><br><br><br><br><br>
     <div id="centrar">
     <h1>¿Te gustaria trabajar con nosotros?</h1><br>
-    <form action="ejemplo.php" method="get">
-            <p>Nombre: <input type="text" name="nombre" size="40"></p><br>
-            <p>Apellidos: <input type="text" name="nombre" size="40"></p><br>
-            <p>Email: <input type="text" name="nombre" size="40"></p><br>
-            <p>Contraseña: <input type="password" name="password" minlength="6"></p><br>
-            <p>Teléfono: <input type="number" name="numero"></p><br>
-            <p>Sexo: <input type="radio" name="hm" value="h"> Hombre
-                     <input type="radio" name="hm" value="m"> Mujer
-                     <input type="radio" name="hm" value="m"> Otro
+    <form action="ejemplo.php" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre"><br>
 
-            </p><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido"><br>
+
+        <label for="contraseña">Contraseña</label>
+        <input type="text" id="contraseña" name="contraseña"><br>
+
+        <label for="telefono">Telefono</label>
+        <input type="text" id="telefono" name="telefono"><br>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email"><br>
+
+        <div>Sexo</div>
+        <input type="radio" id="masculino" name="sexo_r" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="femenino" name="sexo_r" value="femenino">
+        <label for="femenino">Femenino</label><br>
+
+        <input type="submit">
     </form>
     </div>
 </body>
