@@ -2,13 +2,12 @@
 
 class User implements IToJson
 {
-    private $nombre;
-    private $apellido;
-    private $telefono;
-    private $email;
-    private $contrasena;
-    private $sexo;
-
+    public $nombre;
+    public $apellido;
+    public $telefono;
+    public $email;
+    public $contrasena;
+    public $sexo;
 
     /**
      * User constructor.
@@ -21,28 +20,14 @@ class User implements IToJson
      */
     public function __construct($nombre, $apellido, $telefono, $email, $contrasena, $sexo)
     {
-        $this->setNombre($nombre);
-        $this->setApellido($apellido);
-        $this->setTelefono($telefono);
-        $this->setEmail($email);
-        $this->setContrasena($contrasena);
-        $this->setSexo($sexo);
-    }
+        $this->nombre= $nombre;
+        $this->apellido= $apellido;
+        $this->telefono= $telefono;
+        $this->email= $email;
+        $this->contrasena= $contrasena;
+        $this->sexo= $sexo;
 
-    /**
-     * @return mixed
-     */
-    public function getSexo()
-    {
-        return $this->sexo;
-    }
 
-    /**
-     * @param mixed $sexo
-     */
-    public function setSexo($sexo)
-    {
-        $this->sexo = $sexo;
     }
 
     /**
@@ -125,6 +110,24 @@ class User implements IToJson
         $this->contrasena = $contrasena;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getSexo()
+    {
+        return $this->sexo;
+    }
+
+    /**
+     * @param mixed $sexo
+     */
+    public function setSexo($sexo)
+    {
+        $this->sexo = $sexo;
+    }
+
+
+
 
     public function toJson()
     {
@@ -132,8 +135,8 @@ class User implements IToJson
             $this->getNombre(),
             $this->getApellido(),
             $this->getTelefono(),
-            $this->getContrasena(),
             $this->getEmail(),
+            $this->getContrasena(),
             $this->getSexo()
         ]);
     }

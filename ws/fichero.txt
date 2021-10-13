@@ -1,0 +1,32 @@
+
+---------------------
+Nombre: a
+Apellido: a
+Telefono: a
+Email: a
+Contraseña: a
+Sexo: h
+---------------------
+---------------------
+Nombre: a
+Apellido: a
+Telefono: a
+Email: a
+Contraseña: a
+Sexo: h
+---------------------
+---------------------<br>Nombre: a
+Apellido: a
+Telefono: a
+Email: a
+Contraseña: a
+Sexo: h
+---------------------
+---------------------
+Nombre: a
+Apellido: a
+Telefono: a
+Email: a
+Contraseña: a
+Sexo: h
+---------------------
