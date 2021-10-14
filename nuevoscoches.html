@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/navegacion.css" rel="stylesheet">
     <link href="css/nuevoscoches.css" rel="stylesheet">
+
     <title>Ofertas</title>
 </head>
 <body>
@@ -18,26 +19,15 @@
             <li><a href="trabajaconnosotros.html">TRABAJA CON NOSOTROS</a></li>
 
     </header><br><br><br><br><br><br><br><br><br>
-    <div id="centro">
+    <div id="centro"></div>
     <h1>Ofertas nuevos coches</h1><br>
-    <table>
-        <tr>
-            <th>Mercedes</th>
-            <th>BMW</th>
-            <th>Audi</th>
-            <th>Accion</th>
-        </tr>
-        <tr>
-            <td>AMG GT</td>
-            <td>i3</td>
-            <td>a1</td>
-        </tr>
-        <tr>
-            <td>Citan</td>
-            <td>i4</td>
-            <td>a2</td>
-        </tr>
-    </table>
+    <table id="tabla"></table>
+    <div class="buscador">
+        <input type="text" id="buscar">
+        <button id="boton" onkeyup="buscar()">Buscar</button>
+
     </div>
+    <script src="js/javascript.js"></script>
+    <script src="js/datos.js"></script>
 </body>
 </html>
