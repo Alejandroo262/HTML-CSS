@@ -21,4 +21,7 @@ table {
  td{
      border: 2px solid white;
  }
+ #formulario{
+    display: none;
+ }
 

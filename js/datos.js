@@ -12,7 +12,8 @@ function crearTabla(array){
 
     for (let tarea of array){
         let fila = "<tr id='"+tabla.id+"'> <td>"
-        fila += "<button onclick='borrarFila("+tarea.id+")'>X</button></td>";
+        fila += "<button onclick='borrarFila("+tarea.id+")'>X</button>"+
+        "<button onclick='verFormulario("+tarea.id+")'>Modificar</button></td>";
 
         fila += "<td>"
         fila += tarea.Nombre;
