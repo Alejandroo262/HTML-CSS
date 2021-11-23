@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/navegacion.css" rel="stylesheet">
-    <link href="css/segundamano.css" rel="stylesheet">
+   <!--<link href="css/navegacion.css" rel="stylesheet">
+    <link href="css/segundamano.css" rel="stylesheet">-->
+    <script src="https://kit.fontawesome.com/14fc088e07.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="js/barra.js"></script>
 
     <title>Document</title>
@@ -16,10 +18,10 @@
     <div id="centrar">
     <h1>Coches de segunda mano</h1><br>
     <ol>
-        <li>Escriba su marca: <input type="text" name="nombre" size="40"></li><br>
-        <li>Escriba su modelo <input type="text" name="nombre" size="40"></li><br>
+        <li class="list-group-item list-group-item-primary">Escriba su marca: <input type="text" name="nombre" size="40"></li><br>
+        <li class="list-group-item list-group-item-secondary">Escriba su modelo <input type="text" name="nombre" size="40"></li><br>
     </ol>
-    <input type="submit" value="Buscar">
+    <button class="btn btn-info" type="submit" value="Buscar"><i class="fas fa-search"></i>
     </div>
 </body>
 </html>

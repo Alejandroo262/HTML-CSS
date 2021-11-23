@@ -4,8 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/navegacion.css" rel="stylesheet">
+        <!--<link href="css/navegacion.css" rel="stylesheet">-->
         <link href="css/nuevoscoches.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/14fc088e07.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="js/barra.js"></script>
         <title>Ofertas</title>
     </head>
@@ -15,8 +17,8 @@
     <br><br><br><br><br><br><br><br><br>
     <div id="centro"></div>
     <h1>Ofertas nuevos coches</h1><br>
-    <table id="tabla"></table>
-    <div id="formulario"> 
+    <table class="table table-warning table-striped" id="tabla"></table>
+    <div class="table table-warning table-striped" id="formulario"> 
         <form>
             <label for="nombreformulario">Nombre</label>
             <input type="text" id="nombreformulario">
@@ -34,7 +36,7 @@
     <div id="contenedorForm"> 
     <div class="buscador">
         <input type="text" id="buscar">
-        <button id="boton" onkeyup="buscar()">Buscar</button>
+        <button class="btn btn-outline-dark" id="boton" onkeyup="buscar()">Buscar</button>
 
     </div>
     <script src="js/javascript.js"></script>

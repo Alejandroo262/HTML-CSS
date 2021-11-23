@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/navegacion.css" rel="stylesheet">
-    <link href="css/trabaja.css" rel="stylesheet">
+    <!--<link href="css/navegacion.css" rel="stylesheet">
+    <link href="css/trabaja.css" rel="stylesheet">-->
     <script src="js/barra.js"></script>
 
 
@@ -17,18 +17,18 @@
     <div id="centrar">
     <h1>¿Te gustaria trabajar con nosotros?</h1><br>
     <form action="ws/crearUsuario.php" method="post">
-        <p>Nombre: <input type="text" name="TextoNombre"></p>
-        <p>Apellidos: <input type="text" name="TextoApellido"></p>
-        <p>Telefono: <input type="text" name="TextoTelefono"></p>
-        <p>Email: <input type="text" name="TextoEmail"></p>
-        <p>Contraseña: <input type="text" name="TextoContrasena"></p>
-        <p>Sexo:
+        <p class="input-group input-group-sm mb-3">Nombre: <input type="text" name="TextoNombre"></p>
+        <p class="input-group input-group-sm mb-3">Apellidos: <input type="text" name="TextoApellido"></p>
+        <p class="input-group input-group-sm mb-3">Telefono: <input type="text" name="TextoTelefono"></p>
+        <p class="input-group input-group-sm mb-3">Email: <input type="text" name="TextoEmail"></p>
+        <p class="input-group input-group-sm mb-3">Contraseña: <input type="text" name="TextoContrasena"></p>
+        <p multiple class="form-control"> Sexo:
             <input type="radio" name="TextoSexo" value="h"> Hombre
             <input type="radio" name="TextoSexo" value="m"> Mujer
         </p>
         <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
+            <input class="btn btn-success" type="submit" value="Enviar">
+            <input class="btn btn-danger" type="reset" value="Borrar">
         </p>
         </p>
 
