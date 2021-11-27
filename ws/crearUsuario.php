@@ -1,26 +1,35 @@
 <?php
-include 'interfaces/IToJson.php';
-include 'models/User.php';
 
-$nombre = $_POST["TextoNombre"];
-$apellido = $_POST["TextoApellido"];
-$telefono = $_POST["TextoTelefono"];
-$email = $_POST["TextoEmail"];
-$contrasena = $_POST["TextoContrasena"];
-$sexo = $_POST["TextoSexo"];
+require __DIR__ . '/../vendor/autoload.php';
 
-$user = new User($nombre,$apellido,$telefono,$email,$contrasena,$sexo);
+use Model\Usuario;
 
-$fichero=fopen("fichero.txt","a");
-fwrite($fichero,"---------------------".PHP_EOL);
-fwrite($fichero,"Nombre: " .$user->nombre.PHP_EOL);
-fwrite($fichero,"Apellido: " .$user->apellido.PHP_EOL);
-fwrite($fichero,"Telefono: " .$user->telefono.PHP_EOL);
-fwrite($fichero,"Email: " .$user->email.PHP_EOL);
-fwrite($fichero,"Contraseña: " .$user->contrasena.PHP_EOL);
-fwrite($fichero,"Sexo: " .$user->sexo.PHP_EOL);
-fwrite($fichero,"---------------------".PHP_EOL);
-fclose($fichero);
+$nombre=$_POST['nombre'];
+$apellido=$_POST['apellido'];
+$contrasena=$_POST['contrasena'];
+$telefono=$_POST['telefono'];
+$email=$_POST['email'];
+$sexo=$_POST['sexo_r'];
+$nacimiento=$_POST['nacimiento'];
 
-echo json_encode($user);
+$user=new Usuario($nombre, $apellido, $contrasena, $telefono, $email, $sexo, $nacimiento);
+
+
+$file_nombre="usuario.txt";
+$file_modo="a+";
+//$file_contenido=print_r($user);
+
+$file=fopen($file_nombre, $file_modo);
+
+fwrite($file, $user->toString());
+
+fclose($file);
+
+//echo $user->toString();
+
+echo "<br> Metodo toString=> ".$user->toString();
+
+echo "<br><br>";
+
+echo "JSON: ".$user->toJson();
 

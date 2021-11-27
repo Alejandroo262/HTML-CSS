@@ -1,38 +1,41 @@
-const datos=[
-    {
-        Nombre:"Alejandro", Apellido:"Baeza", Telefono:654654654, Email:"alejandrobaeza@gmail.com", Sexo:"hombre"
-    },
-    {
-        Nombre:"Pepe", Apellido:"Suarez", Telefono:634634634, Email:"pepsuarez@gmail.com", Sexo:"hombre"
-    }
-]
+let datos;
+
+window.onload=function(){
+    fetch('ws/getUsuario.php').then((response)=>response.json()).then((json)=>{
+        datos=json.data;
+        console.log(datos);
+
+        let tabla=document.querySelector("#tabla");
+        tabla.innerHTML=crearTabla(datos);
+    });
+   
 
 function crearTabla(array){
     let tabla = "<tr><th>Accion</th></th><th>Nombre</th><th>Apellido</th><th>Telefono</th><th>Email</th><th>Sexo</th></tr>";
 
     for (let tarea of array){
-        let fila = "<tr id='"+tabla.id+"'> <td>"
-        fila += "<i class='fas fa-trash-alt' onclick='borrarFila("+tarea.id+")'></i>"+" "+
+        let fila = "<tr id='"+tarea.id+"'> <td>"
+        fila += "<i class='fas fa-trash-alt' onclick='borrarFila("+tarea.id+", "+datos+")'></i>"+" "+
         "<i class='fas fa-user-edit' onclick='verFormulario("+tarea.id+")'></i></td>";
 
         fila += "<td>"
-        fila += tarea.Nombre;
+        fila += tarea.nombre;
         fila += "</td>"
 
         fila += "<td>"
-        fila += tarea.Apellido;
+        fila += tarea.apellido;
         fila += "</td>"
 
         fila += "<td>"
-        fila += tarea.Telefono;
+        fila += tarea.telefono;
         fila += "</td>"
 
         fila += "<td>"
-        fila += tarea.Email;
+        fila += tarea.email;
         fila += "</td>"
 
         fila += "<td>"
-        fila += tarea.Sexo;
+        fila += tarea.sexo;
         fila += "</td>"
 
 
@@ -43,7 +46,4 @@ function crearTabla(array){
 
     return tabla;
 }
-
-let tabla=document.querySelector("#tabla");
-tabla.innerHTML=crearTabla(datos);
-
+    }

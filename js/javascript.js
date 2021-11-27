@@ -1,6 +1,12 @@
-function borrarFila(idFila){
-    let fila = document.getElementById(idFila);
-    fila.remove();
+function borrarFila(idFila, lista){
+    const borrar = lista.findIndex(valor => valor.id === idFila.toSting());
+    const data= new FormData();
+    data.append("id", lista[borrar].id);
+
+    fetch('ws/deleteUsuario.php', {
+        method: 'POST',
+        body: data
+    })
 }
 
 function verFormulario(idFila){ //Muestra el formulario

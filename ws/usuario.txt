@@ -1,0 +1,11 @@
+Nombre: jorge, Apellido: bas, Telefono: 639981491, Email: jorge@gmail.com, Sexo: masculino
+Nombre: jorge, Apellido: bas, Telefono: 639981491, Email: jorge@gmail.com, Sexo: masculino
+Nombre: jorge, Apellido: bas, Telefono: 639981491, Email: jorge@gmail.com, Sexo: masculino
+Nombre: , Apellido: , Telefono: , Email: , Sexo: 
+Nombre: jorge, Apellido: bas, Telefono: 639981491, Email: jorge@gmail.com, Sexo: masculino
+Nombre: jorge, Apellido: bas, Telefono: 35168, Email: jorge@gmail.com, Sexo: femenino
+Nombre: jorge, Apellido: bas, Telefono: 978757, Email: yjfmjyhf, Sexo: masculino
+Nombre: asdf, Apellido: asd, Telefono: weghd, Email: wewr, Sexo: masculino, Nacimiento: 2000-12-24
+Nombre: asdf, Apellido: asd, Telefono: weghd, Email: wewr, Sexo: masculino, Nacimiento: 2000-12-24
+Nombre: asdf, Apellido: asd, Telefono: weghd, Email: wewr, Sexo: masculino, Nacimiento: 2000-12-24
+Nombre: asdf, Apellido: asd, Telefono: weghd, Email: wewr, Sexo: masculino, Nacimiento: 2000-12-24
